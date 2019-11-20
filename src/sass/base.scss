@@ -1,19 +1,16 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,44 +31,76 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol, ul {
   list-style: none;
 }
-
 blockquote, q {
   quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 a {
   display: block;
   color: inherit;
   text-decoration: none;
 }
-
 .container {
   width: 280px;
   margin: 0 auto;
   text-align: center;
+  @media (min-width: 768px) {
+    width: 688px;
+  }
+  @media (min-width: 1280px) {
+    width: 1210px;
+  }
+}
+.logo {
+  justify-content: flex-start;
+  text-align-last: left;
+  color: #000000;
+  &-en {
+    font-family: Montserrat800, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    display: flex;
+    align-items: center;
+    @media (min-width: 768px) {
+      font-size: 25px;
+      padding-bottom: 4px;
+    }
+    .fire-icon {
+      fill: $orange;
+    }
+  }
+  &-ru {
+    font-family: Montserrat800, sans-serif;
+    font-weight: 800;
+    font-size: 5.3px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    @media (min-width: 768px) {
+      font-size: 8.75px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+    }
+    span:first-child {
+      color: $orange;
+    }
+  }
 }

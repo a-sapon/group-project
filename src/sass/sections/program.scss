@@ -1,0 +1,237 @@
+.program {
+  padding-top: 53px;
+  padding-bottom: 440px;
+  background-color: #111517;
+  background-image: url(../images/sec-program/pic-mob.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 1620px;
+
+  &__title {
+    font-family: 'Montserrat800', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 1px;
+    color: $white;
+    margin-bottom: 40px;
+  }
+}
+
+.schedule {
+  position: relative;
+  display: inline-block;
+  left: 10%;
+
+  &::before {
+    top: 10px;
+    position: absolute;
+    display: block;
+    content: '';
+    width: 2px;
+    height: 1411px;
+    background-color: #858585;
+  }
+
+  &__item {
+    position: relative;
+    ;
+    text-align: start;
+    margin-left: 30px;
+
+    &::before {
+      position: absolute;
+      top: 10px;
+      left: -34px;
+      display: block;
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $orange;
+    }
+  }
+
+  &__revision {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.55px;
+    color: #858585;
+  }
+
+  &__part {
+    text-transform: uppercase;
+    color: $white;
+    font-family: 'Montserrat700', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 29.17px;
+    letter-spacing: 1.65px;
+  }
+}
+
+
+.last-part::after {
+  margin-top: 30px;
+  margin-bottom: 27px;
+  display: block;
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: $orange;
+}
+
+.lessons {
+  margin-bottom: 23px;
+
+  &__name {
+    position: relative;
+    padding-left: 38px;
+    font-family: 'Montserrat700', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.65px;
+    line-height: 29.17px;
+    color: $orange;
+    margin-bottom: 23px;
+
+    &::before {
+      display: block;
+      content: '';
+      width: 25px;
+      height: 2px;
+      background-color: $orange;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+  }
+
+  &__topic {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.55px;
+    color: #858585;
+  }
+}
+
+@media (min-width:768px) {
+  .program {
+    background-image: url(../images/sec-program/pic-tab.png);
+    background-position-x: 346px;
+    background-position-y: 936px;
+
+    &__title {
+      text-align: start;
+      font-size: 26px;
+      line-height: 62.54px;
+      letter-spacing: 1.3px;
+      margin-bottom: 56px;
+    }
+  }
+
+  .wraper {
+    display: flex;
+  }
+
+  .lessons {
+    width: 160px;
+  }
+
+  .schedule {
+    left: 2%;
+
+    &::before {
+      top: 14px;
+      height: 815px;
+    }
+
+    &__item {
+      margin-left: 49px;
+
+      &::before {
+        left: -53px;
+      }
+    }
+
+    &__part {
+      font-size: 15px;
+      line-height: 29.72px;
+      letter-spacing: 1.65px;
+      margin-bottom: 25px
+    }
+  }
+}
+
+@media (min-width:1280px) {
+  .program {
+    padding-top: 80px;
+    background-image: url(../images/sec-program/pic-desc.png);
+    background-position-x: 0;
+    background-position-y: 625px;
+
+    &__title {
+      font-size: 42px;
+      line-height: 62.54px;
+      letter-spacing: 2.1px;
+      margin-bottom: 90px;
+    }
+  }
+
+  .schedule {
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+
+    &::before {
+      top: -55px;
+      width: 100%;
+      height: 2px;
+    }
+
+    &__item {
+      margin-left: 0;
+
+      &::before {
+        width: 19px;
+        height: 19px;
+        top: -63px;
+        left: 0;
+      }
+    }
+
+    &__part {
+      font-size: 19px;
+      letter-spacing: 2.09px;
+      line-height: 29.17px;
+    }
+
+    &__revision {
+      font-size: 18.75px;
+      line-height: 29.17px;
+      letter-spacing: 0.9375px;
+    }
+  }
+
+  .wraper {
+    display: block;
+  }
+
+  .lessons {
+    margin-bottom: 43px;
+
+    &__name {
+      font-size: 18px;
+      line-height: 29.17px;
+      letter-spacing: 0.9px;
+    }
+
+    &__topic {
+      font-size: 18.75px;
+      line-height: 29.17px;
+      letter-spacing: 0.9375px;
+    }
+  }
+}
