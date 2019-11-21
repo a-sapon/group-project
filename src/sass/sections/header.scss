@@ -13,6 +13,7 @@
     background-image: url(../images/burger.png);
     width: 24px;
     height: 12px;
+    cursor: pointer;
   }
 
   &_menu-wrapper {
@@ -222,4 +223,97 @@
 
 .header {
   padding-bottom: 50px;
+}
+
+.overlay-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .9);
+  padding: 25px 20px 0 20px;
+
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 56px;
+
+    @include for-tablet {
+      padding-bottom: 94px;
+    }
+
+    > .logo {
+      color: $white;
+    }
+  }
+
+  &_close-btn {
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/close.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &_menu {
+    display: block;
+    width: 240px;
+    height: 140px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+
+    @include for-tablet {
+      width: 340px;
+      height: 170px;
+    }
+
+    &-item {
+      font-family: Montserrat800, sans-serif;
+      font-weight: 800;
+      font-size: 17px;
+      line-height: 29px;
+      letter-spacing: 0.6px;
+      text-align: left;
+      color: $white;
+      margin-bottom: 10px;
+
+      &:hover {
+        color: $orange;
+      }
+
+      @include for-tablet {
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.78px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  &_btn {
+    width: 247px;
+    height: 45px;
+    margin: 0 auto;
+    border: 2px solid $orange;
+    background-color: transparent;
+    font-family: Montserrat800, sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: $orange;
+    cursor: pointer;
+
+    @include for-tablet {
+      display: none;
+    }
+  }
 }
