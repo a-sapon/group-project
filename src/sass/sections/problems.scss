@@ -33,11 +33,11 @@
     }
 
     @include for-desktop {
-      width: 740px;
+      width: 792px;
       font-size: 42px;
       line-height: 56.5px;
       letter-spacing: 2.1px;
-      padding: 38px 0 0 35px;
+      padding-top: 70px;
     }
 
     span:first-child {
@@ -62,6 +62,7 @@
     padding: 22px 22px 0 22px;
     width: 86%;
     z-index: 1;
+    box-shadow: 0px 20.928px 28.68px -19.68px #B9B9B9;
     counter-reset: count-list;
 
     @include for-tablet {
@@ -72,7 +73,7 @@
     }
 
     @include for-desktop {
-      top: 284px;
+      top: 290px;
       padding: 54px 108px 50px 100px;
     }
 
