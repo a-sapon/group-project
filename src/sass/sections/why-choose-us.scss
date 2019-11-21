@@ -1,7 +1,6 @@
 .why-choose-us {
-  background-color: #111517;
-  padding-top: 150px;
-  // position: absolute;
+  position: absolute;
+  top: 79%;
 
   &_title {
     font-family: Montserrat800, sans-serif;
@@ -11,7 +10,8 @@
     color: $white;
     text-align: left;
     width: 250px;
-    padding: 48px 0 18px 20px;
+    padding-bottom: 18px;
+    background-color: transparent;
 
     @include for-tablet {
       width: auto;

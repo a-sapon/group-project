@@ -59,7 +59,8 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: $white;
-    padding: 22px 0 34px 28px;
+    padding: 22px 22px 0 22px;
+    width: 86%;
     z-index: 1;
     counter-reset: count-list;
 
@@ -112,8 +113,10 @@
         margin-bottom: 44px;
       }
 
-      &:nth-last-of-type(-n + 3) {
-        margin-bottom: 0;
+      @include for-desktop {
+        &:nth-last-of-type(-n + 3) {
+          margin-bottom: 0;
+        }
       }
 
       &::before {
