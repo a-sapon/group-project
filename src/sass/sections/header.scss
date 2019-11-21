@@ -1,0 +1,225 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 26px;
+  margin-bottom: 58px;
+
+  @media (min-width: 768px) {
+    padding-top: 34px;
+  }
+
+  &_burger {
+    background-image: url(../images/burger.png);
+    width: 24px;
+    height: 12px;
+  }
+
+  &_menu-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &_menu, &_btn {
+    display: none;
+  }
+
+  &_btn {
+    @media (min-width: 768px) {
+      display: inline-block;
+      width: 247px;
+      height: 45px;
+      margin-right: 45px;
+      border: 2px solid $orange;
+      background-color: transparent;
+      font-family: Montserrat800, sans-serif;
+      font-weight: 800;
+      font-size: 11px;
+      text-transform: uppercase;
+      color: $orange;
+      cursor: pointer;
+    }
+  }
+
+  &_menu {
+    @media (min-width: 1280px) {
+      display: flex;
+    }
+
+    &-item {
+      font-family: Montserrat700, sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      color: $light-font-color;
+      text-transform: uppercase;
+      margin-right: 42px;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}
+
+.hdr {
+  margin-bottom: 80px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_descr {
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+
+    &-title {
+      font-family: Montserrat800, sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: 0.6px;
+      color: $dark-font-color;
+      text-align: left;
+      padding-bottom: 30px;
+
+      @media (min-width: 768px) {
+        width: 272px;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: 0.78px;
+      }
+
+      @media (min-width: 1280px) {
+        width: 502px;
+        font-size: 48px;
+        line-height: 58px;
+        letter-spacing: 1.4px;
+      }
+    }
+
+    &-para {
+      font-family: Montserrat500, sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.75px;
+      color: $light-font-color;
+      text-align: left;
+
+      @media (min-width: 1280px) {
+        font-size: 18px;
+        line-height: 26.3px;
+        letter-spacing: 0.9px;
+      }
+    }
+
+    &-text {
+      font-family: Montserrat700, sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.75px;
+      color: $dark-font-color;
+      text-align: left;
+      padding-bottom: 36px;
+
+      @media (min-width: 1280px) {
+        font-size: 18px;
+        line-height: 26.3px;
+        letter-spacing: 0.9px;
+      }
+
+      span {
+        color: $orange;
+      }
+    }
+
+    &-btn {
+      width: 246px;
+      height: 44px;
+      border: none;
+      background-color: $orange;
+      color: $white;
+      font-family: Montserrat700, sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 34px;
+      cursor: pointer;
+
+      @media (min-width: 1280px) {
+        width: 300px;
+        height: 68px;
+        font-size: 12px;
+        letter-spacing: 2.4px;
+      }
+    }
+  }
+}
+
+.list {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-item {
+    font-family: Montserrat700, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.65px;
+    color: $dark-font-color;
+    text-align: left;
+    height: 58px;
+    padding-left: 70px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      width: 200px;
+    }
+
+    @media (min-width: 1280px) {
+      height: 103px;
+      width: 378px;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.9px;
+      padding-left: 84px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &:first-child {
+      background-image: url(../images/female-icon.png);
+      @media (min-width: 1280px) {
+        background-image: url(../images/female-icon-desktop.png);
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url(../images/mobile-learning-icon.png);
+      @media (min-width: 1280px) {
+        background-image: url(../images/mobile-learning-icon-desktop.png);
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url(../images/dollar-icon.png);
+      @media (min-width: 1280px) {
+        background-image: url(../images/dollar-icon-desktop.png);
+      }
+    }
+  }
+}
+
+.header {
+  padding-bottom: 50px;
+}

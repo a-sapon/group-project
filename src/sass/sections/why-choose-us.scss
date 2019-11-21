@@ -1,0 +1,101 @@
+.why-choose-us {
+  background-color: #111517;
+  padding-top: 150px;
+  // position: absolute;
+
+  &_title {
+    font-family: Montserrat800, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+    text-align: left;
+    width: 250px;
+    padding: 48px 0 18px 20px;
+
+    @include for-tablet {
+      width: auto;
+      text-align: center;
+    }
+
+    @include for-desktop {
+      font-size: 42px;
+      line-height: 56.5px;
+      letter-spacing: 2.1px;
+      padding: 0 0 38px 0;
+    }
+
+    span {
+      display: block;
+
+      @include for-tablet {
+        display: inline;
+      }
+    }
+  }
+
+  &_list {
+    background-color: $white;
+    padding: 22px 0 30px 28px;
+    counter-reset: count-list;
+
+    @include for-tablet {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 28px 80px 0 105px;
+    }
+    @include for-desktop {
+      padding: 54px 88px 50px 100px;
+    }
+
+    &-item {
+      font-family: Montserrat800, sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.65px;
+      color: $dark-font-color;
+      text-align: left;
+      margin-bottom: 10px;
+
+      @include for-tablet {
+        width: 220px;
+        margin-bottom: 26px;
+      }
+
+      @include for-desktop {
+        width: 310px;
+        font-size: 18px;
+        line-height: 29px;
+        letter-spacing: 0.9px;
+        margin-bottom: 44px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &:nth-last-of-type(-n + 2) {
+        @include for-tablet {
+          margin-bottom: 0;
+        }
+      }
+
+      &:nth-last-of-type(-n + 3) {
+        @include for-desktop {
+          margin-bottom: 0;
+        }
+      }
+
+      &::before {
+        counter-increment: count-list;
+        content: '—  ' counter(count-list, decimal-leading-zero);
+        display: block;
+        text-align: left;
+        color: $orange;
+        font-weight: 500;
+      }
+    }
+  }
+}

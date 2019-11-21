@@ -1,0 +1,129 @@
+.problems {
+  background-color: #111517;
+  position: relative;
+  min-height: 518px;
+
+  @include for-tablet {
+    background-image: url(../images/fire-bg.png);
+    background-repeat: no-repeat;
+    min-height: 333px;
+  }
+  @include for-desktop {
+    background-image: url(../images/fire-bg-desktop.png);
+    min-height: 525px;
+  }
+
+  &_title {
+    font-family: Montserrat800, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+    color: $white;
+    text-align: left;
+    width: 260px;
+    padding: 48px 0 0 20px;
+
+    @include for-tablet {
+      padding: 60px 0 0 40px;
+      width: 540px;
+      font-size: 26px;
+      line-height: 33px;
+      letter-spacing: 1.3px;
+    }
+
+    @include for-desktop {
+      width: 740px;
+      font-size: 42px;
+      line-height: 56.5px;
+      letter-spacing: 2.1px;
+      padding: 38px 0 0 35px;
+    }
+
+    span:first-child {
+      display: block;
+
+      @include for-tablet {
+        display: inline;
+      }
+    }
+
+    span:nth-child(2) {
+      color: $orange;
+    }
+  }
+
+  &_list {
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $white;
+    padding: 22px 0 34px 28px;
+    z-index: 1;
+    counter-reset: count-list;
+
+    @include for-tablet {
+      top: 177px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    @include for-desktop {
+      top: 284px;
+      padding: 54px 108px 50px 100px;
+    }
+
+    &-item {
+      font-family: Montserrat800, sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.65px;
+      color: $dark-font-color;
+      text-align: left;
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      @include for-tablet {
+        width: 238px;
+        margin-bottom: 26px;
+
+        span {
+          display: block;
+        }
+      }
+
+      &:nth-last-of-type(-n + 2){
+        @include for-tablet {
+          margin-bottom: 0;
+        }
+      }
+
+      @include for-desktop {
+        width: 285px;
+        font-size: 18px;
+        line-height: 29px;
+        letter-spacing: 0.9px;
+        margin-bottom: 44px;
+      }
+
+      &:nth-last-of-type(-n + 3) {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        counter-increment: count-list;
+        content: "—  " counter(count-list, decimal-leading-zero);
+        display: block;
+        text-align: left;
+        color: $orange;
+        font-weight: 500;
+      }
+    }
+  }
+}
