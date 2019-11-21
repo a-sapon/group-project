@@ -1,7 +1,9 @@
 .why-choose-us {
   position: absolute;
-  top: 79%;
-
+  top: 925px;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 0px 20.928px 28.68px -19.68px #b9b9b9;
   &_title {
     font-family: Montserrat800, sans-serif;
     font-weight: 800;
