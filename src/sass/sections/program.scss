@@ -1,7 +1,7 @@
 .program {
   padding-top: 53px;
   padding-bottom: 440px;
-  background-color: #111517;
+  background-color: $black-color;
   background-image: url(../images/sec-program/pic-mob.png);
   background-repeat: no-repeat;
   background-position-x: right;
@@ -30,7 +30,7 @@
     content: '';
     width: 2px;
     height: 1411px;
-    background-color: #858585;
+    background-color: $gray-color;
   }
 
   &__item {
@@ -57,7 +57,7 @@
     font-size: 11px;
     line-height: 20px;
     letter-spacing: 0.55px;
-    color: #858585;
+    color: $gray-color;
   }
 
   &__part {
@@ -113,7 +113,7 @@
     font-size: 11px;
     line-height: 20px;
     letter-spacing: 0.55px;
-    color: #858585;
+    color: $gray-color;
   }
 }
 
