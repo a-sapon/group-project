@@ -1,4 +1,5 @@
 .main-ftr {
+  font-family: "Montserrat";
   text-align: center;
 
   &__first-sctn {
@@ -18,11 +19,11 @@
     height: 26px;
     padding-bottom: 32px;
     margin-right: 8px;
+    transition-property: all;
+    transition-duration: 0.4s;
 
     &:hover,
     &:focus {
-      transition-property: all;
-      transition-duration: 0.4s;
       transform: scale(1.5, 1.5);
     }   
   }
@@ -35,7 +36,6 @@
   &__cntct-nmbr {
     display: inline-block;
     font-size: 18px;
-    font-family: "Montserrat";
     color: #111517;
     font-weight: 600;
     line-height: 2.083; 
@@ -48,11 +48,11 @@
     height: 38px;
     margin: 0 auto;
     margin-bottom: 20px;
+    transition-property: transform;
+    transition-duration: 0.4s;
     
     &:hover,
     &:focus {
-      transition-property: all;
-      transition-duration: 0.4s;
       transform: scale(1.5, 1.5);
     }    
   }
@@ -64,7 +64,6 @@
 
   &__second-sctn-license {
     font-size: 11px;
-    font-family: "Montserrat";
     color: #fdfefe6b;
     line-height: 3.409;
     margin: 0 auto;

@@ -291,11 +291,11 @@
     &__btn-left,
     &__btn-right {
       bottom: 250px;
+      transition-property: all;
+      transition-duration: 0.4s;
       
       &:hover,
       &:focus {
-        transition-property: all;
-        transition-duration: 0.4s;
         transform: scale(1.5, 1.5);
       } 
     }

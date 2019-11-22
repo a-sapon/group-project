@@ -69,11 +69,11 @@
     text-transform: uppercase;
     width: 250px;
     height: 48px;
+    transition-property: all;
+    transition-duration: 0.2s;
 
     &:hover,
     &:focus {
-      transition-property: all;
-      transition-duration: 0.2s;
       transform: scale(1.1, 1.1);
       box-shadow: 0 0 3px #ffffff; 
     } 
