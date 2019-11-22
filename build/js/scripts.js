@@ -18,3 +18,4 @@ function closeOverlay(e) {
     overlay.classList.add('overlay-hidden');
   }
 }
+"use strict";
