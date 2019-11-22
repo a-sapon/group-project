@@ -1,0 +1,121 @@
+.guarantee {
+  background-color: #f1f1f1;
+
+  @media (min-width: 768px) {
+    background-color: #ffffff;
+  }
+
+  &__list {
+    padding: 28px 0 28px 0;
+    position: relative;
+
+    @media (min-width: 768px) {
+      background-color: #f1f1f1;
+    }
+  }
+
+  &__section-title {
+    font-family: 'Montserrat800', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    background-color: #ffffff;
+    padding-bottom: 24px;
+  }
+}
+
+.guarantee__list-item {
+  font-family: 'Montserrat400', sans-serif;
+  font-size: 11px;
+  margin-bottom: 28px;
+  position: relative;
+  padding-left: 30px;
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .type-one::after {
+    background-image: url(../images/border-line.png);
+    content: '';
+    display: block;
+    width: 1px;
+    height: 184px;
+    position: absolute;
+    top: 18px;
+    left: 7px;
+  }
+
+  &::before {
+    background-image: url(../images/fire/fire.png);
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 19px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    position: absolute;
+    left: 1px;
+  }
+}
+
+.type-one::after {
+  background-image: url(../images/border-line.png);
+  content: '';
+  display: block;
+  width: 1px;
+  height: 184px;
+  position: absolute;
+  top: 18px;
+  left: 7px;
+}
+
+.text-color {
+  color: $orange;
+}
+
+@media (min-width: 768px) {
+  .type-one::after {
+    height: 170px;
+  }
+
+  .guarantee__list {
+    padding: 40px 60px;
+
+    &-item {
+      padding: 0 40px 0 40px;
+      line-height: normal;
+      font-size: 13px;
+    }
+
+    &__section-title {
+      font-size: 26px;
+      font-weight: 800;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .guarantee {
+    &__section-title {
+      font-size: 42px;
+      margin: 35px 35px 0 35px;
+    }
+
+    &__list-item {
+      font-size: 18px;
+    }
+
+    &__list {
+      line-height: normal;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  .type-one::after {
+    height: 172px;
+  }
+}

@@ -1,0 +1,179 @@
+.registration {
+  background-color: #111517;
+  background-image: url("../images/registration-bck-grnd-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #ffffff;
+  padding: 50px 0 60px;
+
+  &__title {
+    font-size: 14px;
+    
+    line-height: 1.86;
+    padding: 0 24px;
+    margin-bottom: 26px;
+  }
+
+  &__title-fill {
+    color: #ff6b08;
+  }
+
+  &__discription {
+    font-size: 11px;
+    line-height: 1.818;
+    padding: 0 20px;
+    margin-bottom: 28px;  
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__form-input-name,
+  &__form-input-phone {
+    background-color: #00000000;
+    border: 1px solid #ffffff;
+    text-indent: 22px;
+    width: 278px;
+    height: 48px;
+    margin-bottom: 20px;
+
+    &::placeholder {
+      font-size: 13px;
+      font-family: "Montserrat";
+      color: #ffffff;
+      font-weight: 700;
+      line-height: 2.885; 
+      letter-spacing: 0.65px; 
+    }
+  }
+
+  &__form-input-phone {
+    margin-bottom: 54px;
+  }
+
+  &__main-btn {
+    border: 2px solid #ff6b08;
+    background-color: #ff6b08;
+    font-size: 11px;
+    font-family: "Tahoma";
+    letter-spacing: 1.43px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 250px;
+    height: 48px;
+    transition-property: all;
+    transition-duration: 0.2s;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1, 1.1);
+      box-shadow: 0 0 3px #ffffff; 
+    } 
+      
+  }
+}
+
+@media (min-width: 380px) {
+  .registration__discription-second-line {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .registration {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-image: url(../images/registration-bck-grnd-tablet.jpg);
+    align-items: center;
+    padding: 60px 0;
+
+    &__title {
+      font-size: 22px;
+      line-height: 1.729;
+    }
+
+    &__discription-box {
+      text-align: start;
+    }
+
+    &__discription {
+      display: inline-block;
+      font-size: 15px;
+      line-height: 1.333;
+      text-align: left;
+      padding: 0;
+      width: 456px;
+    }
+
+    &__form-input-name,
+    &__form-input-phone {
+      width: 400px;
+      height: 50px;
+    }
+
+    &__form-input-phone {
+      margin-bottom: 30px;
+    }
+
+    &__main-btn {
+      letter-spacing: 1.43px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .registration {
+    background-image: url(../images/registration-bck-grnd-desctop.jpg);
+
+    &__title {
+      font-size: 37.5px;
+      line-height: 1.334;
+      padding: 0 40px;
+    }
+
+    &__discription {
+      display: block;
+      font-size: 18px;
+      line-height: 1.361;
+      letter-spacing: 0.9px;
+      width: 552px;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    &__form-input-name,
+    &__form-input-phone {
+      text-indent: 26px;
+      width: 620px;
+      height: 72px;
+      margin-bottom: 28px;
+  
+      &::placeholder {
+        font-size: 21px;
+        line-height: 1.8;  
+      }
+    }
+
+    &__form-input-phone {
+      margin-bottom: 58px;
+    }
+
+    &__main-btn {
+      font-size: 14px;
+      line-height: 4.857;
+      letter-spacing: 2.8px;
+      width: 350px;
+      height: 70px;
+    }        
+  }
+}
