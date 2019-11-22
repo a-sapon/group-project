@@ -1,15 +1,23 @@
-.problems {
+.problems_outer {
   background-color: #111517;
-  position: relative;
-  min-height: 518px;
 
   @include for-tablet {
     background-image: url(../images/fire-bg.png);
     background-repeat: no-repeat;
-    min-height: 333px;
   }
   @include for-desktop {
     background-image: url(../images/fire-bg-desktop.png);
+  }
+}
+
+.problems {
+  position: relative;
+  min-height: 518px;
+
+  @include for-tablet {
+    min-height: 333px;
+  }
+  @include for-desktop {
     min-height: 525px;
   }
 
