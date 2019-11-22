@@ -1,0 +1,189 @@
+.section__teacher {
+  padding-top: 248px;
+}
+
+.teacher-image {
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 190px;
+}
+
+.teacher__section-title {
+  font-family: 'Montserrat800', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: left;
+  padding-bottom: 26px;
+}
+
+.teacher__section-subtitle {
+  font-family: 'Montserrat800', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: left;
+  padding-top: 24px;
+  padding-bottom: 7px;
+  border-bottom: 2px solid $light-font-color;
+}
+
+.teacher__features-list {
+  font-family: 'Montserrat500', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 13px;
+  text-align: left;
+  margin-top: 26px;
+  margin-left: 22px;
+  position: relative;
+
+  &::before {
+    background-image: url(../images/check/check.png);
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    position: absolute;
+    left: -20px;
+  }
+  &:last-child::after {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: $orange;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+}
+
+.text-content {
+  font-family: 'Montserrat400', sans-serif;
+  color: $light-font-color;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.certificate-link {
+  text-decoration: underline;
+  font-family: 'Montserrat400', sans-serif;
+  letter-spacing: 1px;
+  font-size: 11px;
+  color: $orange;
+  padding-bottom: 55px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section__teacher {
+    padding-top: 170px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 688px;
+    align-content: center;
+  }
+
+  .teacher__section-title {
+    font-size: 26px;
+    letter-spacing: 1px;
+    padding-bottom: 33px;
+  }
+
+  .teacher-image {
+    height: 320px;
+    width: 225px;
+  }
+
+  .teacher__section-subtitle {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $light-font-color;
+  }
+
+  .teacher__content {
+    width: 415px;
+  }
+
+  .teacher__features-list:last-child::after {
+    margin-left: -20px;
+  }
+
+  .text-content {
+    font-weight: 300;
+  }
+
+  .certificate-link {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-teacher {
+    padding-top: 98px;
+  }
+
+  .teacher__section-title {
+    font-size: 42px;
+    letter-spacing: 1px;
+  }
+
+  .teacher-image {
+    height: 626px;
+    width: 450px;
+  }
+
+  .teacher__section-subtitle {
+    font-size: 29px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $light-font-color;
+  }
+
+  .teacher__content {
+    width: 641px;
+    padding-right: 59px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1188px;
+    align-content: center;
+  }
+
+  .teacher__features-list {
+    font-family: 'Montserrat500', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 35px;
+    line-height: normal;
+  }
+
+  .teacher__features-list:last-child::after {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .text-content {
+    padding-bottom: 37px;
+    line-height: normal;
+    font-size: 17px;
+  }
+
+  .certificate-link {
+    font-size: 17px;
+  }
+}

@@ -73,5 +73,52 @@ a {
 .container {
   width: 280px;
   margin: 0 auto;
-  text-align: center;
+  text-align: center;  
+  
+  @media (min-width: 768px) {
+    width: 688px;
+  }  
+  
+  @media (min-width: 1280px) {
+    width: 1210px;
+  }
+}
+
+.logo {
+  justify-content: flex-start;
+  text-align-last: left;
+  color: #000000;  
+  
+  &-en {
+    font-family: Montserrat800, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    display: flex;
+    align-items: center;    @media (min-width: 768px) {
+      font-size: 25px;
+      padding-bottom: 4px;
+    }    
+    
+    .fire-icon {
+      fill: $orange;
+    }
+  }  
+  
+  &-ru {
+    font-family: Montserrat800, sans-serif;
+    font-weight: 800;
+    font-size: 5.3px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;    
+    
+    @media (min-width: 768px) {
+      font-size: 8.75px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+    }  
+    
+    span:first-child {
+      color: $orange;
+    }
+  }
 }
