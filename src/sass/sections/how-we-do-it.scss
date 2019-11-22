@@ -1,5 +1,5 @@
 .how-we-do-it {
-  padding-top: 206px;
+  padding-top: 122px;
   padding-bottom: 53px;
 
   &__title {
@@ -80,10 +80,8 @@
 }
 
 @media (min-width: 768px) {
-
-
   .how-we-do-it {
-    padding-top: 232px;
+    padding-top: 200px;
 
     &__title {
       font-size: 26px;
@@ -122,7 +120,7 @@
 
 @media (min-width: 1280px) {
   .how-we-do-it {
-    padding-top: 170px;
+    padding-top: 340px;
 
     &__title {
       text-align: start;

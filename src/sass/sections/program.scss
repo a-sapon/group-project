@@ -2,10 +2,43 @@
   padding-top: 53px;
   padding-bottom: 440px;
   background-color: $black-color;
-  background-image: url(../images/sec-program/pic-mob.png);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: 1482px;
+
+  &_section-wrapper {
+    position: relative;
+    min-height: 1588px;
+
+    @include for-tablet {
+      min-height: 1084px;
+    }
+    @include for-desktop {
+      min-height: 915px;
+    }
+  }
+
+  &_section-wrapper::after {
+    content: "";
+    width: 143px;
+    height: 183px;
+    background-image: url(../images/sec-program/pic-mob.png);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @include for-tablet {
+      width: 423px;
+      height: 291px;
+      background-image: url(../images/sec-program/pic-tabl.jpg);
+      right: -40px;
+      bottom: -60px;
+    }
+    @include for-desktop {
+      width: 545px;
+      height: 394px;
+      background-image: url(../images/sec-program/pic-desk.jpg);
+      left: -20px;
+      bottom: -60px;
+    }
+  }
 
   &__title {
     font-family: 'Montserrat800', sans-serif;
@@ -123,10 +156,6 @@
 
 @media (min-width:768px) {
   .program {
-    background-image: url(../images/sec-program/pic-tabl.jpg);
-    background-position-x: 346px;
-    background-position-y: 936px;
-
     &__title {
       text-align: start;
       font-size: 26px;
@@ -170,11 +199,6 @@
 
 @media (min-width:1280px) {
   .program {
-    padding-top: 80px;
-    background-image: url(../images/sec-program/pic-desk.jpg);
-    background-position-x: 0;
-    background-position-y: 676px;
-
     &__title {
       font-size: 42px;
       line-height: 62.54px;

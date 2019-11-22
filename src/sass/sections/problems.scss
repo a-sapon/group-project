@@ -67,6 +67,7 @@
 
     @include for-tablet {
       top: 177px;
+      padding: 22px 22px 36px 22px;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
