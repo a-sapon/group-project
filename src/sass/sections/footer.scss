@@ -13,7 +13,7 @@
   }
 
   &__second-sctn-license {
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 11px;
     color: #fdfefe6b;
     line-height: 3.409;
@@ -40,6 +40,11 @@
     margin-bottom: 10px;
   }
 
+  &__icon-tel {
+    width: 40px;
+    height: 26px;
+  }
+
   &__icon-tel-link {
     display: block;
     width: 22px;
@@ -49,17 +54,12 @@
     transition-property: all;
     transition-duration: 0.4s;
 
-    &--icon-tel {
-      width: 22px;
-      height: 26px;
-    }
-
     &:hover,
     &:focus {
       transform: scale(1.5, 1.5);
     }
   }
-  
+
   &__icon-instagram-link {
     display: block;
     width: 38px;
@@ -83,9 +83,10 @@
 
 @media (min-width: 768px) {
   .main-ftr {
-    .logo{
+    .logo {
       margin-right: 84px;
     }
+
     &__first-sctn {
       display: flex;
       flex-direction: row-reverse;
@@ -100,53 +101,51 @@
     }
   }
 
-  .contact{
+  .contact {
     display: flex;
     flex-direction: row;
     margin-bottom: 0;
 
-    &__tel{
+    &__tel {
       border-right: 1px solid #e0e0e0;
       padding: 0 30px;
       margin: 0 30px;
     }
   }
-    
+
 }
 
 @media (min-width: 1280px) {
-  .main-ftr {
-    &__first-sctn {
-      padding: 56px 0 48px;
+  .contact {
+    &__nmbr {
+      font-size: 27px;
+      line-height: 37.5px;
+      margin-bottom: 0;
+      letter-spacing: 1.35px;
     }
 
     &__icon-tel-link,
     &__icon-tel {
-      width: 42px;
-      height: 38px;
+      width: 36px;
+      height: 40px;
+      margin-right: 20px;
     }
 
-    &__cntct-nmbr {
-      font-size: 27px;
-      line-height: 0.385;
-      margin-bottom: 6px;
-      letter-spacing: 1.35px;
+  }
+
+  .main-ftr {
+    .logo {
+      margin-right: 256px;
     }
 
-    &__lg {
-      left: 36px;
-      bottom: 50px;
-    }
-
-    &__second-sctn {
-      padding: 18px 0;
+    &__first-sctn {
+      padding: 56px 0 48px;
     }
 
     &__second-sctn-license {
       font-size: 14.583px;
       line-height: 2.571;
       text-align: left;
-      padding-left: 36px;
     }
   }
 }
