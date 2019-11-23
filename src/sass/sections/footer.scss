@@ -13,6 +13,7 @@
   }
 
   &__second-sctn-license {
+    font-family: "Montserrat",sans-serif;
     font-size: 11px;
     color: #fdfefe6b;
     line-height: 3.409;
@@ -82,40 +83,35 @@
 
 @media (min-width: 768px) {
   .main-ftr {
+    .logo{
+      margin-right: 84px;
+    }
     &__first-sctn {
-      position: relative;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
       background-color: #ffffff;
       padding: 40px 0;
     }
 
-    &__tel-box {
+    &__second-sctn-license {
+      text-align: left;
+    }
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+
+    &__tel{
       border-right: 1px solid #e0e0e0;
       padding: 0 30px;
       margin: 0 30px;
     }
-
-    &__cntct-nmbr {
-      font-size: 20px;
-      line-height: 0.875;
-    }
-
-    &__icon-instagram-link {
-      display: inline-block;
-      margin: 0;
-    }
-
-    &__lg {
-      position: absolute;
-      left: 40px;
-      bottom: 40px;
-    }
-
-    &__second-sctn-license {
-      text-align: left;
-      padding-left: 40px;
-    }
   }
-
+    
 }
 
 @media (min-width: 1280px) {
