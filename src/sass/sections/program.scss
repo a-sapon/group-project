@@ -3,6 +3,13 @@
   padding-bottom: 245px;
   background-color: $black-color;
 
+  @include for-tablet {
+    padding-bottom: 300px;
+  }
+  @include for-desktop {
+    padding-bottom: 400px;
+  }
+
   &_section-wrapper {
     position: relative;
     min-height: 1588px;

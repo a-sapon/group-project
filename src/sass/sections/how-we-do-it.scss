@@ -1,5 +1,5 @@
 .how-we-do-it {
-  padding-top: 140px;
+  padding-top: 170px;
   padding-bottom: 53px;
 
   &__title {
@@ -18,6 +18,27 @@
   padding-bottom: 29px;
   margin: 0 15px 15px;
   box-shadow: 0px 3.928px 46.68px -20.68px #b9b9b9;
+  transition: all 0.3s linear;
+
+  &:hover {
+    background-color: $orange;
+
+    .decision__item--icon {
+      fill: $white;
+    }
+
+    .decision__item--title {
+      color: $white;
+
+      &::after {
+        background-color: $white;
+      }
+    }
+
+    .decision__item--description {
+      color: $white;
+    }
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -56,26 +77,6 @@
     line-height: 20px;
     letter-spacing: 0.55px;
     color: $light-font-color;
-  }
-
-  &:hover {
-    background-color: $orange;
-
-    .decision__item--icon {
-      fill: $white;
-    }
-
-    .decision__item--title {
-      color: $white;
-
-      &::after {
-        background-color: $white;
-      }
-    }
-
-    .decision__item--description {
-      color: $white;
-    }
   }
 }
 
@@ -120,7 +121,7 @@
 
 @media (min-width: 1280px) {
   .how-we-do-it {
-    padding-top: 340px;
+    padding-top: 170px;
 
     &__title {
       text-align: start;

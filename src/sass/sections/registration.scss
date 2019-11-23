@@ -39,6 +39,10 @@
   &__form-input-phone {
     background-color: #00000000;
     border: 1px solid #ffffff;
+    font-size: 13px;
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    font-weight: 700;
     text-indent: 22px;
     width: 278px;
     height: 48px;
@@ -46,7 +50,7 @@
 
     &::placeholder {
       font-size: 13px;
-      font-family: "Montserrat";
+      font-family: Montserrat, sans-serif;
       color: #ffffff;
       font-weight: 700;
       line-height: 2.885; 
@@ -74,7 +78,6 @@
 
     &:hover,
     &:focus {
-      transform: scale(1.1, 1.1);
       box-shadow: 0 0 3px #ffffff; 
     } 
       

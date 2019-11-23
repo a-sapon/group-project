@@ -39,6 +39,14 @@
       text-transform: uppercase;
       color: $orange;
       cursor: pointer;
+      transition: all 0.3s linear;
+
+      &:hover,
+      &:focus {
+        background-color: $orange;
+        color: $white;
+      } 
+  
     }
   }
 
@@ -150,6 +158,13 @@
       text-transform: uppercase;
       margin-bottom: 34px;
       cursor: pointer;
+      transition: all 0.3s linear;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 3px #000000; 
+      } 
+  
 
       @media (min-width: 1280px) {
         width: 300px;
@@ -239,11 +254,15 @@
   background-color: rgba(0, 0, 0, .9);
   padding: 25px 20px 0 20px;
 
+  @include for-tablet {
+    padding: 25px 50px 0 50px;
+  }
+
   &_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px 56px 50px;
+    padding-bottom: 56px;
 
     @include for-tablet {
       padding-bottom: 94px;

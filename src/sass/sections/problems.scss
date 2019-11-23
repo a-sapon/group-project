@@ -12,13 +12,13 @@
 
 .problems {
   position: relative;
-  min-height: 518px;
+  min-height: 488px;
 
   @include for-tablet {
-    min-height: 333px;
+    min-height: 315px;
   }
   @include for-desktop {
-    min-height: 525px;
+    min-height: 560px;
   }
 
   &_title {

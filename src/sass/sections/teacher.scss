@@ -28,10 +28,12 @@
   }
 
   &__features-list {
-    font-family: 'Montserrat500', sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-family: 'Montserrat600', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.6px;
     font-size: 13px;
+    line-height: 20px;
+    color: #111517;
     text-align: left;
     margin-top: 26px;
     margin-left: 22px;
@@ -66,7 +68,8 @@
   font-family: 'Montserrat400', sans-serif;
   color: $light-font-color;
   letter-spacing: 0.5px;
-  font-size: 16px;
+  font-size: 11px;
+  line-height: 20px;
   font-weight: 400;
   text-align: left;
   padding-bottom: 25px;
@@ -84,7 +87,7 @@
 
 @media (min-width: 768px) {
   .section__teacher {
-    padding-top: 100px;
+    padding-top: 260px;
   }
 
   .wrapper {
@@ -124,18 +127,14 @@
     width: 225px;
   }
 
-  .text-content {
-    font-weight: 300;
-  }
-
   .certificate-link {
     text-align: left;
   }
 }
 
 @media (min-width: 1280px) {
-  .section-teacher {
-    padding-top: 98px;
+  .section__teacher {
+    padding-top: 100px;
   }
 
   .teacher-image {
@@ -171,11 +170,12 @@
     }
 
     &__features-list {
-      font-family: 'Montserrat500', sans-serif;
-      letter-spacing: 1px;
-      font-size: 18px;
+      font-family: 'Montserrat600', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      font-size: 16.7px;
+      line-height: 29px;
       margin-bottom: 35px;
-      line-height: normal;
     }
   
     &__features-list:last-child::after {
@@ -186,11 +186,14 @@
 
   .text-content {
     padding-bottom: 37px;
-    line-height: normal;
+    line-height: 29px;
     font-size: 17px;
+    letter-spacing: 0.8px;
   }
 
   .certificate-link {
-    font-size: 17px;
+    font-size: 16.7px;
+    line-height: 29px;
+    letter-spacing: 0.8px;
   }
 }
