@@ -1,13 +1,14 @@
 .feedbacks {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat500', sans-serif;
   font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.55px;
   padding: 48px 0;
 
   &__main-title {
+    font-family: 'Montserrat700', sans-serif;
     font-size: 20px;
-    color: #111517;
+    color: $black-color;
     font-weight: 700;
     line-height: 1.327;
     padding: 0 50px;
@@ -20,7 +21,7 @@
 
   &__main-list-item {
     padding: 22px 28px 35px;
-    background-color: #ffffff;
+    background-color: $white;
     box-shadow: 4px 6.928px 34.96px 11.04px #1d1d1b17;
   }
 
@@ -39,28 +40,29 @@
 
   &__main-list-item-title {
     font-size: 13px;
-    color: #ff6b08;
+    color: $orange;
+    font-family: 'Montserrat700', sans-serif;
     font-weight: 700;
     line-height: 2.244;
     letter-spacing: 0.65px;
   }
 
   &__main-list-item-discription {
-    color: #858585;
+    color: $gray-color;
     line-height: 1.515;
     margin-bottom: 16px;
   }
 
   &__main-list-item-text {
     display: inline-block;
-    color: #18191d;
+    color: $dark-font-color;
     line-height: 1.818;
     letter-spacing: 0.55px;
   }
 
   &__main-list-item-text-anchor {
     display: inline-block;
-    color: #ff6b08;
+    color: $orange;
     text-decoration: underline;
   }
 
@@ -97,7 +99,7 @@
 
   &__btn-left-svg,
   &__btn-right-svg {
-    fill: #ff6b08;
+    fill: $orange;
     width: 16px;
     height: 20px;  
   }
@@ -161,7 +163,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@include for-tablet {
   .container {
     width: 688px;
     height: auto;
@@ -219,7 +221,7 @@
       &:hover,
       &:focus {
         border-radius: 50%;
-        border: 2px solid #ff6b08;
+        border: 2px solid $orange;
       }
     }
 
@@ -247,7 +249,7 @@
     display: none;
   }
 }
-@media (min-width: 1280px) {
+@include for-desktop {
   .container {
     width: 1210px;
     

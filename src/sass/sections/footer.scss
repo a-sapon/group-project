@@ -1,19 +1,19 @@
 .main-ftr {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat400', sans-serif;
   text-align: center;
 
   &__first-sctn {
-    background-color: #ffffff;
+    background-color: $white;
     padding: 14px 0;
   }
 
   &__second-sctn {
-    background-color: #111517;
+    background-color: $black-color;
     padding: 18px 0;
   }
 
   &__second-sctn-license {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat400', sans-serif;
     font-size: 11px;
     color: #fdfefe6b;
     line-height: 3.409;
@@ -35,7 +35,8 @@
 
   &__nmbr {
     font-size: 18px;
-    color: #111517;
+    color: $black-color;
+    font-family: 'Montserrat600', sans-serif;
     font-weight: 600;
     line-height: 2.083;
     margin-bottom: 10px;
@@ -81,7 +82,7 @@
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 768px) {
+@include for-tablet {
   .main-ftr {
     .logo {
       margin-right: 84px;
@@ -92,7 +93,7 @@
       flex-direction: row-reverse;
       justify-content: flex-end;
       align-items: center;
-      background-color: #ffffff;
+      background-color: $white;
       padding: 40px 0;
     }
 
@@ -113,7 +114,7 @@
     }
   }
 }
-@media (min-width: 1280px) {
+@include for-desktop {
   .contact {
     &__nmbr {
       font-size: 27px;
