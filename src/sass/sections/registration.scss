@@ -44,15 +44,14 @@
     font-weight: 700;
     text-indent: 22px;
     width: 278px;
-    height: 48px;
     margin-bottom: 20px;
+    line-height: 37.5px;
 
     &::placeholder {
       font-size: 13px;
       font-family: 'Montserrat700', sans-serif;
       color: $white;
       font-weight: 700;
-      line-height: 2.885; 
       letter-spacing: 0.65px; 
     }
   }
@@ -119,7 +118,7 @@
     &__form-input-name,
     &__form-input-phone {
       width: 400px;
-      height: 50px;
+      line-height: 48px;
     }
 
     &__form-input-phone {
@@ -157,14 +156,12 @@
     &__form-input-phone {
       text-indent: 26px;
       width: 620px;
-      height: 72px;
       margin-bottom: 28px;
       font-size: 21px;
-      line-height: 1.8;
+      line-height: 70px;
   
       &::placeholder {
         font-size: 21px;
-        line-height: 1.8;  
       }
     }
 
