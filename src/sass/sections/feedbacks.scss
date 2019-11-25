@@ -6,10 +6,10 @@
   padding: 48px 0;
 
   &__main-title {
-    font-family: 'Montserrat700', sans-serif;
+    font-family: 'Montserrat800', sans-serif;
     font-size: 20px;
     color: $black-color;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.327;
     padding: 0 50px;
     margin-bottom: 18px;
@@ -252,7 +252,6 @@
 @include for-desktop {
   .container {
     width: 1210px;
-    
   }
 
   .feedbacks {
