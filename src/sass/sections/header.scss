@@ -14,6 +14,10 @@
     width: 24px;
     height: 12px;
     cursor: pointer;
+
+    @include for-desktop {
+      display: none;
+    }
   }
 
   &_menu-wrapper {
@@ -91,7 +95,7 @@
       letter-spacing: 0.6px;
       color: $dark-font-color;
       text-align: left;
-      padding-bottom: 30px;
+      margin-bottom: 30px;
 
       @media (min-width: 768px) {
         width: 272px;
@@ -132,7 +136,7 @@
       letter-spacing: 0.75px;
       color: $dark-font-color;
       text-align: left;
-      padding-bottom: 36px;
+      margin-bottom: 36px;
 
       @media (min-width: 1280px) {
         font-size: 18px;
@@ -163,14 +167,17 @@
       &:hover,
       &:focus {
         box-shadow: 0 0 3px #000000; 
-      } 
-  
+      }
 
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
       @media (min-width: 1280px) {
         width: 300px;
         height: 68px;
         font-size: 12px;
         letter-spacing: 2.4px;
+        margin-bottom: 0;
       }
     }
   }
@@ -196,21 +203,25 @@
     display: flex;
     align-items: center;
 
-    @media (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+
+      @include for-tablet {
+        margin-bottom: 0;
+      }
+    }
+
+    @include for-tablet {
       width: 200px;
     }
 
-    @media (min-width: 1280px) {
+    @include for-desktop {
       height: 103px;
       width: 378px;
       font-size: 18px;
       line-height: 28px;
       letter-spacing: 0.9px;
       padding-left: 84px;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 25px;
     }
 
     &:first-child {
@@ -237,7 +248,11 @@
 }
 
 .header {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+
+  @include for-desktop {
+    margin-bottom: 86px;
+  }
 }
 
 .overlay-hidden {
